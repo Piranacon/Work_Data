@@ -1,0 +1,16 @@
+@prefix wd:<https://www.wikidata.org/wiki/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix Location: <http://www.example.org/Paul/Schema/Places#> .
+@prefix actions: <http://www.example.org/Paul/Schema/Actions#> .
+
+wd:Q51730
+a foaf:person ;
+    foaf:name "Yoda" ;
+    actions:Visited [ 
+        location:Planet wd:Q2085181;  
+        rdfs:comment "Documenting Yodas visit"@en 
+    ], [
+        location:mountain <https://starwars.fandom.com/wiki/Monument_Plaza> ;
+        rdfs:comment "Documenting Yodas visit"@en 
+    ] .
